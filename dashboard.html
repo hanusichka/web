@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Головна сторінка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Калькулятор СЛАР методом Гауса</h1>
+  <div class="calculator">
+    <label for="matrix-size">Розмірність матриці:</label>
+    <input type="number" id="matrix-size" min="2" max="10" value="3">
+    <button onclick="generateMatrix()">Згенерувати матрицю</button>
+
+    <div id="matrix-inputs"></div>
+    <button onclick="solveGauss()">Розв'язати</button>
+
+    <h3>Результат:</h3>
+    <pre id="result"></pre>
+  </div>
+
+  <div class="history">
+    <h3>Історія обчислень</h3>
+    <ul id="history-list"></ul>
+    <button onclick="loadHistory()">Завантажити історію</button>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>

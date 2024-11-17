@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сторінка Авторизації</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Авторизація</h2>
+    <form id="login-form">
+      <label for="login-username">Логін:</label>
+      <input type="text" id="login-username" required>
+      
+      <label for="login-password">Пароль:</label>
+      <input type="password" id="login-password" required>
+      
+      <button type="button" onclick="login()">Увійти</button>
+    </form>
+
+    <h2>Реєстрація</h2>
+    <form id="register-form">
+      <label for="register-username">Логін:</label>
+      <input type="text" id="register-username" required>
+      
+      <label for="register-password">Пароль:</label>
+      <input type="password" id="register-password" required>
+      
+      <button type="button" onclick="register()">Зареєструватися</button>
+    </form>
+    
+    <p id="message"></p>
+  </div>
+  
+  <script src="client.js"></script>
+</body>
+</html>
